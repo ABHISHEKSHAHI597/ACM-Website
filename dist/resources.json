@@ -1,0 +1,44 @@
+[
+  {
+    "id": "acm-digital-library",
+    "title": "ACM Digital Library",
+    "description": "Discover research, journals, magazines, conference proceedings, and other computing literature.",
+    "category": "Research",
+    "url": "https://dl.acm.org/"
+  },
+  {
+    "id": "acm-learning-center",
+    "title": "ACM Learning Center",
+    "description": "Build practical skills with courses, books, training videos, webinars, and interactive learning.",
+    "category": "Learning",
+    "url": "https://learning.acm.org/"
+  },
+  {
+    "id": "acm-computing-classification",
+    "title": "Computing Classification System",
+    "description": "Browse ACM's subject classification system to organize and explore areas of computing.",
+    "category": "Reference",
+    "url": "https://www.acm.org/publications/class-2012"
+  },
+  {
+    "id": "acm-career-resources",
+    "title": "ACM Career Resources",
+    "description": "Find career guidance, job opportunities, and professional development resources for computing.",
+    "category": "Career",
+    "url": "https://www.acm.org/career-resources"
+  },
+  {
+    "id": "acm-technews",
+    "title": "ACM TechNews",
+    "description": "Keep up with technology news and developments selected for the computing community.",
+    "category": "News",
+    "url": "https://technews.acm.org/"
+  },
+  {
+    "id": "acm-code-of-ethics",
+    "title": "ACM Code of Ethics",
+    "description": "Read the principles and responsibilities that guide ethical professional conduct in computing.",
+    "category": "Professional Practice",
+    "url": "https://www.acm.org/code-of-ethics"
+  }
+]

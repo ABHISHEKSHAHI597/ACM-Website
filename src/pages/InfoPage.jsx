@@ -2,62 +2,6 @@ import { Link } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 
 const pageContent = {
-  "/about": {
-    section: "About",
-    title: "The ACM student chapter of IIT Mandi",
-    intro:
-      "We are IIT Mandi's student chapter of the Association for Computing Machinery, a community for every student on the Kamand campus who wants to learn computing deeply and build with it.",
-    sections: [
-      {
-        title: "Our chapter",
-        body: "The chapter runs talks, workshops, coding contests and hackathons, and supports students working on projects and research. Membership is open to students of every branch and year.",
-      },
-      {
-        title: "About ACM",
-        body: "Founded in 1947, the Association for Computing Machinery is the world's largest educational and scientific computing society. It publishes leading journals and conference proceedings, runs Special Interest Groups such as SIGGRAPH, SIGCHI and SIGPLAN, and presents the A.M. Turing Award, often called the highest honour in computing.",
-      },
-      {
-        title: "ACM India",
-        body: "ACM India is ACM's regional council for India. It connects chapters across the country through events, awards and programmes for students and professionals.",
-      },
-      {
-        title: "IIT Mandi",
-        body: "Established in 2009, IIT Mandi is set in the Kamand valley of Himachal Pradesh. The chapter brings together the institute's growing computing community across disciplines.",
-      },
-    ],
-    links: [
-      { label: "Visit acm.org", href: "https://www.acm.org/about-acm" },
-      { label: "Visit ACM India", href: "https://india.acm.org/" },
-    ],
-  },
-  "/acm-w": {
-    section: "ACM-W",
-    title: "ACM-W at IIT Mandi",
-    intro:
-      "Our ACM-W student chapter supports, celebrates and advocates for women in computing at IIT Mandi, and works to make the field more inclusive for everyone.",
-    sections: [
-      {
-        title: "What ACM-W is",
-        body: "ACM-W is ACM's Council on Women in Computing. Through student chapters worldwide, it offers scholarships, mentoring, celebrations of women in computing, and a network of peers and role models.",
-      },
-      {
-        title: "ACM-W India",
-        body: "ACM-W India connects ACM-W chapters across the country and runs programmes such as the Grad Cohort for women pursuing research in computing.",
-      },
-      {
-        title: "What we do on campus",
-        body: "Mentoring circles, technical workshops, talks by women in research and industry, and support for applying to scholarships, internships and conferences.",
-      },
-      {
-        title: "Who can join",
-        body: "Everyone. ACM-W events are open to all students who share the goal of a more inclusive computing community.",
-      },
-    ],
-    links: [
-      { label: "Visit ACM-W", href: "https://women.acm.org/" },
-      { label: "Visit ACM-W India", href: "https://acmwindia.acm.org/" },
-    ],
-  },
   "/join": {
     section: "Join",
     title: "Join the chapter",

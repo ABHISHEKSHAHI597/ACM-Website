@@ -4,10 +4,11 @@
 export const chapter = {
   name: "ACM Student Chapter, IIT Mandi",
   shortName: "ACM IIT Mandi",
-  email: null, // e.g. "acm@iitmandi.ac.in"
+  tagline: "Fostering computing, research and innovation at IIT Mandi.",
+  email: "acmchapter@students.iitmandi.ac.in",
   socials: {
-    instagram: null, // full profile URL
-    linkedin: null,
+    instagram: "https://www.instagram.com/acm_iitmandi/",
+    linkedin: "https://www.linkedin.com/company/acm-iit-mandi/",
     github: null,
   },
 };
@@ -15,17 +16,19 @@ export const chapter = {
 export const acmw = {
   name: "ACM-W Student Chapter, IIT Mandi",
   shortName: "ACM-W IIT Mandi",
-  email: null,
+  founded: 2019,
+  email: null, // ACM-W queries currently go to the chapter email
   socials: {
     instagram: null,
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/company/iit-mandi-acm-w-chapter/",
   },
 };
 
 export const institute = {
   name: "Indian Institute of Technology Mandi",
-  address: "Kamand campus, Mandi district, Himachal Pradesh, India",
+  address: "Kamand, Mandi district, Himachal Pradesh 175075, India",
   url: "https://www.iitmandi.ac.in/",
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=IIT+Mandi+Kamand+Campus",
 };
 
 export const acmLinks = [

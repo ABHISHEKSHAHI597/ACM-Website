@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import AboutPage from "./pages/AboutPage";
+import AcmwPage from "./pages/AcmwPage";
 import ContactPage from "./pages/ContactPage";
 import EventsPage from "./pages/EventsPage";
 import HomePage from "./pages/HomePage";
@@ -22,6 +24,8 @@ export default function App() {
       <div className="flex-1">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/acm-w" element={<AcmwPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/contact" element={<ContactPage />} />
