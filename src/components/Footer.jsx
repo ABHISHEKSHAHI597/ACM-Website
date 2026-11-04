@@ -15,6 +15,7 @@ const footerGroups = [
     title: "Take part",
     links: [
       ["Events", "/events"],
+      ["Projects", "/projects"],
       ["Join the chapter", "/join"],
       ["Resources", "/resources"],
       ["Code of conduct", "/code-of-conduct"],

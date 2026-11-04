@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import EventList from "./EventList";
+import RepositoryCards from "./RepositoryCards";
 import ResourceCards from "./ResourceCards";
 
 const activities = [
@@ -90,6 +91,16 @@ const TopicCards = () => {
             </Link>
           </div>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28" aria-labelledby="projects-title">
+        <SectionHeading
+          id="projects-title"
+          title="What we're building"
+          intro="Open-source projects from the chapter's GitHub organization, updated as we ship."
+          link={{ to: "/projects", label: "All projects" }}
+        />
+        <RepositoryCards limit={4} />
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28" aria-labelledby="acm-title">

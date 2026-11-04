@@ -8,6 +8,7 @@ import ContactPage from "./pages/ContactPage";
 import EventsPage from "./pages/EventsPage";
 import HomePage from "./pages/HomePage";
 import InfoPage, { pageContent } from "./pages/InfoPage";
+import ProjectsPage from "./pages/ProjectsPage";
 import ResourcesPage from "./pages/ResourcesPage";
 import TeamPage from "./pages/TeamPage";
 
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/acm-w" element={<AcmwPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           {Object.keys(pageContent).map((path) => (

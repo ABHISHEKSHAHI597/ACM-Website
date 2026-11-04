@@ -6,10 +6,11 @@ export const chapter = {
   shortName: "ACM IIT Mandi",
   tagline: "Fostering computing, research and innovation at IIT Mandi.",
   email: "acmchapter@students.iitmandi.ac.in",
+  githubOrg: "ACM-IIT-Mandi",
   socials: {
     instagram: "https://www.instagram.com/acm_iitmandi/",
     linkedin: "https://www.linkedin.com/company/acm-iit-mandi/",
-    github: null,
+    github: "https://github.com/ACM-IIT-Mandi",
   },
 };
 
