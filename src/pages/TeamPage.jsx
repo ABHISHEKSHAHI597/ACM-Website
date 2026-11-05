@@ -22,13 +22,23 @@ const TeamPage = () => (
             <p className="mt-6 text-muted">To be announced.</p>
           ) : (
             <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4">
-              {members.map(({ name, role, github, image }) => (
+              {members.map(({ name, role, github, image, email }) => (
                 <article key={name}>
                   <div className="aspect-4/5 overflow-hidden rounded-md bg-mist">
                     {image && <img src={image} alt={name} loading="lazy" className="size-full object-cover" />}
                   </div>
                   <h3 className="mt-4 text-lg font-semibold text-ink">{name}</h3>
                   <p className="mt-1 text-sm text-muted">{role}</p>
+                  {email && (
+                    <a
+                      href={`mailto:${email}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-2 inline-flex items-center gap-1.5 text-sm text-acm hover:underline"
+                    >
+                      {email}
+                    </a>
+                  )}
                   {github && (
                     <a
                       href={`https://github.com/${github}`}

@@ -37,15 +37,21 @@ const focusAreas = [
 const highlights = [
   {
     date: "Nov 2026",
-    title: "GitHero",
+    title: "Githero",
     kind: "Competition",
-    body: "A practical Git and GitHub competition for first-year students: real-world workflows, solved under time pressure.",
+    body: "A Git and GitHub showdown primarily for first-year students: investigate a repository with multiple issues, identify and fix the problems, and submit solutions through pull requests in a simulated open-source environment.",
   },
   {
     date: "Oct 2026",
-    title: "Hacktoberfest meetup and introduction to GSoC",
+    title: "Introduction to GSoC",
     kind: "Session",
-    body: "An evening on the fundamentals of open source contribution and how to get started with Google Summer of Code.",
+    body: "An introduction to Google Summer of Code: the application process, the open-source ecosystem, how organizations and contributors collaborate, finding suitable projects, making first contributions and preparing a strong application.",
+  },
+  {
+    date: "Aug 2026",
+    title: "Introduction to Git, GitHub and CLI",
+    kind: "Session",
+    body: "A hands-on introduction to Git for version control, GitHub for collaborative development, and the command line for interacting with your system efficiently, covering commits, branching and collaboration workflows.",
   },
   {
     date: "Aug 2026",
@@ -61,9 +67,21 @@ const highlights = [
   },
   {
     date: "Mar 2026",
-    title: "XPLOIT at Xpecto 2026",
+    title: "Xploit at Xpecto 2026",
     kind: "Competition",
-    body: "A software exploitation challenge at IIT Mandi's annual tech fest: code surgery, assembly, jailbreaking and more, with a ₹25,000 prize pool.",
+    body: "A reverse engineering competition at IIT Mandi's annual tech fest: analyse applications, programs and codebases, uncover hidden functionality and solve challenges by understanding how software works internally.",
+  },
+  {
+    date: "Earlier",
+    title: "AlgoHack",
+    kind: "Competition",
+    body: "A reverse engineering competitive programming contest: given a problem statement and a flawed implementation, analyse its behaviour and construct test cases that expose incorrect outputs or cause it to fail.",
+  },
+  {
+    date: "Earlier",
+    title: "Mock OA",
+    kind: "Session",
+    body: "An online assessment and interview preparation initiative for second-year students: timed coding tests modelled on company hiring rounds, followed by mock interviews for top performers, conducted twice.",
   },
   {
     date: "Earlier",

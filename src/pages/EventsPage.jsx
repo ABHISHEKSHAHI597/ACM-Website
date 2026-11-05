@@ -13,6 +13,9 @@ const EventsPage = () => (
       <h2 className="mb-8 font-display text-3xl font-medium text-ink">Upcoming</h2>
       <EventList />
 
+      <h2 className="mt-20 mb-8 font-display text-3xl font-medium text-ink">Past events</h2>
+      <EventList past />
+
       <h2 className="mt-20 mb-8 font-display text-3xl font-medium text-ink">What we run</h2>
       <dl className="grid gap-x-16 gap-y-10 md:grid-cols-2">
         {eventFormats.map(({ title, body }) => (
