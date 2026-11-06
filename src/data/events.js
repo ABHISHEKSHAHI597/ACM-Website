@@ -22,6 +22,8 @@ export const events = [];
 export const annualEvents = [
   {
     title: "Xploit",
+    kind: "Competition",
+    summary: "A reverse engineering competition at Xpecto, IIT Mandi's annual tech fest: analyse applications, programs and codebases, uncover hidden functionality and solve challenges by understanding how software works internally.",
     subtitle: "Reverse engineering competition",
     tags: ["Competition", "At Xpecto"],
     body: [
@@ -30,6 +32,8 @@ export const annualEvents = [
   },
   {
     title: "Introduction to GSoC",
+    kind: "Session",
+    summary: "An introduction to Google Summer of Code: the application process, the open-source ecosystem, finding suitable projects, making first contributions and preparing a strong application.",
     subtitle: "Google Summer of Code",
     tags: ["Session", "Open source"],
     body: [
@@ -38,6 +42,8 @@ export const annualEvents = [
   },
   {
     title: "Introduction to Git, GitHub and CLI",
+    kind: "Workshop",
+    summary: "A hands-on introduction to Git for version control, GitHub for collaborative development, and the command line, covering commits, branching and collaboration workflows.",
     subtitle: "Hands-on workshop",
     tags: ["Workshop"],
     body: [
@@ -46,6 +52,8 @@ export const annualEvents = [
   },
   {
     title: "Githero",
+    kind: "Competition",
+    summary: "A Git and GitHub showdown primarily for first-year students: investigate a repository with multiple issues, fix the problems, and submit solutions through pull requests.",
     subtitle: "Git & GitHub showdown",
     tags: ["Competition", "First years"],
     body: [
@@ -54,6 +62,8 @@ export const annualEvents = [
   },
   {
     title: "AlgoHack",
+    kind: "Contest",
+    summary: "A reverse engineering competitive programming contest: given a problem statement and a flawed implementation, construct test cases that expose incorrect outputs or cause it to fail.",
     subtitle: "Reverse engineering competitive programming contest",
     tags: ["Contest"],
     body: [
@@ -62,6 +72,8 @@ export const annualEvents = [
   },
   {
     title: "Mock OA",
+    kind: "Assessment",
+    summary: "Online assessment and interview preparation for second-year students: timed coding tests modelled on company hiring rounds, followed by mock interviews for top performers. Held twice a year.",
     subtitle: "Online assessment & interview preparation",
     tags: ["Second years", "Held twice"],
     body: [

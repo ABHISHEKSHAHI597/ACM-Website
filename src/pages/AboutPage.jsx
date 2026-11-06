@@ -1,5 +1,6 @@
 import PageHeader from "../components/PageHeader";
 import { CtaBand, Section, SectionTitle, TextLink } from "../components/PageBlocks";
+import { annualEvents } from "../data/events";
 import { chapter } from "../data/chapter";
 
 // Sources: the chapter's LinkedIn page and posts (2026), and its earlier website.
@@ -31,63 +32,6 @@ const focusAreas = [
   {
     title: "Collaborations",
     body: "Work with industry, researchers and other student bodies at IIT Mandi to bring more opportunities to campus.",
-  },
-];
-
-const highlights = [
-  {
-    date: "Nov 2026",
-    title: "Githero",
-    kind: "Competition",
-    body: "A Git and GitHub showdown primarily for first-year students: investigate a repository with multiple issues, identify and fix the problems, and submit solutions through pull requests in a simulated open-source environment.",
-  },
-  {
-    date: "Oct 2026",
-    title: "Introduction to GSoC",
-    kind: "Session",
-    body: "An introduction to Google Summer of Code: the application process, the open-source ecosystem, how organizations and contributors collaborate, finding suitable projects, making first contributions and preparing a strong application.",
-  },
-  {
-    date: "Aug 2026",
-    title: "Introduction to Git, GitHub and CLI",
-    kind: "Session",
-    body: "A hands-on introduction to Git for version control, GitHub for collaborative development, and the command line for interacting with your system efficiently, covering commits, branching and collaboration workflows.",
-  },
-  {
-    date: "Aug 2026",
-    title: "Technical Induction Program 2026",
-    kind: "Workshop",
-    body: "An interactive session on the CLI, Git and GitHub for the incoming batch, as part of the institute's induction.",
-  },
-  {
-    date: "Aug 2026",
-    title: "Meeting ACM India leadership",
-    kind: "Chapter",
-    body: "The ACM and ACM-W chapter teams met Prof. Ponnurangam Kumaraguru, President of ACM India, to share our activities and plans for the chapters.",
-  },
-  {
-    date: "Mar 2026",
-    title: "Xploit at Xpecto 2026",
-    kind: "Competition",
-    body: "A reverse engineering competition at IIT Mandi's annual tech fest: analyse applications, programs and codebases, uncover hidden functionality and solve challenges by understanding how software works internally.",
-  },
-  {
-    date: "Earlier",
-    title: "AlgoHack",
-    kind: "Competition",
-    body: "A reverse engineering competitive programming contest: given a problem statement and a flawed implementation, analyse its behaviour and construct test cases that expose incorrect outputs or cause it to fail.",
-  },
-  {
-    date: "Earlier",
-    title: "Mock OA",
-    kind: "Session",
-    body: "An online assessment and interview preparation initiative for second-year students: timed coding tests modelled on company hiring rounds, followed by mock interviews for top performers, conducted twice.",
-  },
-  {
-    date: "Earlier",
-    title: "ICPC prelims, CP and research workshops",
-    kind: "Archive",
-    body: "Conducting the ICPC preliminary round, an introduction to competitive programming, and workshops on LaTeX, MATLAB and research methodology.",
   },
 ];
 
@@ -180,21 +124,21 @@ const AboutPage = () => (
       <div className="flex flex-wrap items-end justify-between gap-6">
         <SectionTitle
           id="highlights-title"
-          eyebrow="Recent highlights"
+          eyebrow="Every year"
           title="What we have been up to"
-          intro="A selection of the chapter's recent sessions, contests and milestones."
+          intro="The workshops, sessions and contests the chapter runs every year."
         />
         {chapter.socials.linkedin && <TextLink href={chapter.socials.linkedin}>Follow updates on LinkedIn</TextLink>}
       </div>
       <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {highlights.map(({ date, title, kind, body }) => (
+        {annualEvents.map(({ subtitle, title, kind, summary }) => (
           <li key={title} className="flex flex-col rounded-lg border border-line p-6 transition-colors hover:border-acm/40">
             <div className="flex items-center justify-between gap-3 text-sm">
-              <span className="font-medium text-ink">{date}</span>
+              <span className="font-medium text-ink">{subtitle}</span>
               <span className="rounded-full bg-mist px-2.5 py-0.5 text-xs text-muted">{kind}</span>
             </div>
             <h3 className="mt-5 font-display text-xl font-medium leading-snug text-ink">{title}</h3>
-            <p className="mt-3 leading-7 text-muted">{body}</p>
+            <p className="mt-3 leading-7 text-muted">{summary}</p>
           </li>
         ))}
       </ol>
