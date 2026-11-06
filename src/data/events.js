@@ -17,6 +17,16 @@
 
 export const events = [];
 
+// Dated events on either side of today (past = true for events already held).
+export const eventsByDate = (past) => {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return events.filter((event) => {
+    const eventDate = new Date(`${event.date}T00:00:00`);
+    return past ? eventDate < today : eventDate >= today;
+  });
+};
+
 // The chapter's recurring events: run every year, shown on the Events page
 // independent of the dated list above.
 export const annualEvents = [

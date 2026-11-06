@@ -1,4 +1,5 @@
 import EventList from "../components/EventList";
+import EventPath from "../components/EventPath";
 import PageHeader from "../components/PageHeader";
 import { annualEvents } from "../data/events";
 
@@ -12,6 +13,12 @@ const EventsPage = () => (
     <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20">
       <h2 className="mb-8 font-display text-3xl font-medium text-ink">Upcoming</h2>
       <EventList />
+
+      <h2 className="mt-20 font-display text-3xl font-medium text-ink">Your path through the year</h2>
+      <p className="mt-3 mb-8 max-w-2xl leading-7 text-muted">
+        How the yearly events build on each other, from your first commit to your first interview.
+      </p>
+      <EventPath />
 
       <h2 className="mt-20 font-display text-3xl font-medium text-ink">Every year</h2>
       <p className="mt-3 mb-8 max-w-2xl leading-7 text-muted">

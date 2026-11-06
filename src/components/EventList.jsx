@@ -1,4 +1,4 @@
-import { events } from "../data/events";
+import { eventsByDate } from "../data/events";
 import { chapter } from "../data/chapter";
 
 const formatDate = (iso) =>
@@ -19,14 +19,7 @@ const EventImage = ({ src, alt }) => (
 );
 
 const EventList = ({ limit, past }) => {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  const allItems = events;
-  const filtered = allItems.filter((event) => {
-    const eventDate = new Date(`${event.date}T00:00:00`);
-    return past ? eventDate < today : eventDate >= today;
-  });
+  const filtered = eventsByDate(past);
   const displayItems = limit ? filtered.slice(0, limit) : filtered;
 
   if (displayItems.length === 0) {

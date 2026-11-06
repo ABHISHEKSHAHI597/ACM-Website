@@ -1,20 +1,26 @@
 import { Link } from "react-router-dom";
+import AnnualEventCards from "./AnnualEventCards";
 import EventList from "./EventList";
+import { eventsByDate } from "../data/events";
 import RepositoryCards from "./RepositoryCards";
 import ResourceCards from "./ResourceCards";
 
 const activities = [
   {
-    title: "Talks and workshops",
-    body: "Sessions led by students, faculty and visiting engineers, from first steps in a language to research-level topics.",
+    title: "Workshops and sessions",
+    body: "Hands-on introductions to Git, GitHub and the command line, Google Summer of Code and open source, competitive programming, LaTeX, and MATLAB with research methodology.",
   },
   {
-    title: "Contests and hackathons",
-    body: "Competitive programming rounds and build weekends where teams take an idea from sketch to working demo.",
+    title: "Contests",
+    body: "Githero for first-year students, AlgoHack's break-the-solution format, Xploit at Xpecto, and the conduct of the ICPC preliminary round on campus.",
   },
   {
-    title: "Reading and project groups",
-    body: "Small groups that work through papers from the ACM Digital Library and ship open-source projects together.",
+    title: "Placement preparation",
+    body: "Mock OA, a company-style online assessment followed by mock interviews, held twice a year for second-year students, alongside internship guidance sessions.",
+  },
+  {
+    title: "Open-source projects",
+    body: "Projects built and maintained by students in the chapter's GitHub organization, open for anyone to contribute to.",
   },
 ];
 
@@ -66,8 +72,22 @@ const TopicCards = () => {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 sm:pb-28" aria-labelledby="events-title">
-        <SectionHeading id="events-title" title="Upcoming events" link={{ to: "/events", label: "All events" }} />
-        <EventList limit={3} />
+        {eventsByDate(false).length > 0 ? (
+          <>
+            <SectionHeading id="events-title" title="Upcoming events" link={{ to: "/events", label: "All events" }} />
+            <EventList limit={3} />
+          </>
+        ) : (
+          <>
+            <SectionHeading
+              id="events-title"
+              title="Every year at ACM"
+              intro="The workshops, sessions and contests the chapter runs annually. Dates are announced on Instagram and LinkedIn."
+              link={{ to: "/events", label: "All events" }}
+            />
+            <AnnualEventCards />
+          </>
+        )}
       </section>
 
       <section className="bg-acmw text-white" aria-labelledby="acmw-title">
@@ -80,8 +100,9 @@ const TopicCards = () => {
           </div>
           <div>
             <p className="leading-7 text-white/80">
-              Our ACM-W chapter runs mentoring, workshops and talks by women in
-              research and industry, as part of ACM-W and the ACM-W India network.
+              Our ACM-W chapter runs contests such as Clash of Codes, Puzzle Pit and
+              Code Quest for first- and second-year women, along with internship
+              guidance, as part of ACM-W and the ACM-W India network.
             </p>
             <Link
               to="/acm-w"

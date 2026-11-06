@@ -1,6 +1,6 @@
 import PageHeader from "../components/PageHeader";
 import { CtaBand, Section, SectionTitle, TextLink } from "../components/PageBlocks";
-import { annualEvents } from "../data/events";
+import AnnualEventCards from "../components/AnnualEventCards";
 import { chapter } from "../data/chapter";
 
 // Sources: the chapter's LinkedIn page and posts (2026), and its earlier website.
@@ -18,8 +18,8 @@ const focusAreas = [
     body: "Sessions on algorithms, systems, AI/ML and software development, led by students, faculty and invited speakers.",
   },
   {
-    title: "Contests and hackathons",
-    body: "Competitive programming rounds, ICPC preparation and build challenges that reward depth and creativity.",
+    title: "Contests",
+    body: "Githero, AlgoHack and Xploit at Xpecto, plus ICPC preparation and the conduct of the ICPC preliminary round on campus.",
   },
   {
     title: "Open source and developer tools",
@@ -130,18 +130,9 @@ const AboutPage = () => (
         />
         {chapter.socials.linkedin && <TextLink href={chapter.socials.linkedin}>Follow updates on LinkedIn</TextLink>}
       </div>
-      <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {annualEvents.map(({ subtitle, title, kind, summary }) => (
-          <li key={title} className="flex flex-col rounded-lg border border-line p-6 transition-colors hover:border-acm/40">
-            <div className="flex items-center justify-between gap-3 text-sm">
-              <span className="font-medium text-ink">{subtitle}</span>
-              <span className="rounded-full bg-mist px-2.5 py-0.5 text-xs text-muted">{kind}</span>
-            </div>
-            <h3 className="mt-5 font-display text-xl font-medium leading-snug text-ink">{title}</h3>
-            <p className="mt-3 leading-7 text-muted">{summary}</p>
-          </li>
-        ))}
-      </ol>
+      <div className="mt-12">
+        <AnnualEventCards />
+      </div>
     </Section>
 
     <div className="border-t border-line">
