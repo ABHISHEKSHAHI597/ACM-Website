@@ -15,73 +15,58 @@
 // To load event photos, replace FILE_ID below with each image's actual file ID from that folder.
 // You cannot list folder contents client-side without the Google Drive API, so file IDs must be added manually.
 
-export const events = [
+export const events = [];
+
+// The chapter's recurring events: run every year, shown on the Events page
+// independent of the dated list above.
+export const annualEvents = [
   {
-    title: "Githero",
-    date: "2026-11-20",
-    time: "10:00 am",
-    venue: "Lecture Hall Complex",
-    chapter: "ACM",
-    description: "A Git and GitHub showdown primarily for first-year students: investigate a repository with multiple issues, identify and fix the problems, and submit solutions through pull requests in a simulated open-source environment.",
-    registerUrl: "https://forms.gle/example-githero",
+    title: "Xploit",
+    subtitle: "Reverse engineering competition",
+    tags: ["Competition", "At Xpecto"],
+    body: [
+      "Organized as part of Xpecto, the annual technical fest of IIT Mandi, Xploit is a reverse engineering competition that challenges participants to look beyond the surface and understand how software works internally. Participants are presented with various applications, programs, and codebases and are tasked with analyzing their underlying logic, uncovering hidden functionality, and solving challenges through reverse engineering. The competition encourages analytical thinking, curiosity, and hands-on exploration of software systems.",
+    ],
   },
   {
     title: "Introduction to GSoC",
-    date: "2026-10-01",
-    time: "6:00 pm",
-    venue: "A10, North Campus",
-    chapter: "ACM",
-    description: "An introduction to Google Summer of Code: the application process, the open-source ecosystem, how organizations and contributors collaborate, finding suitable projects, making first contributions and preparing a strong application.",
+    subtitle: "Google Summer of Code",
+    tags: ["Session", "Open source"],
+    body: [
+      "An introductory session designed to familiarize students with Google Summer of Code (GSoC), its application process, and the opportunities it offers to aspiring developers. The session introduces participants to the open-source ecosystem, explains how organizations and contributors collaborate, and guides students on finding suitable projects, understanding codebases, making their first contributions, and preparing a strong application. It aims to help students take their first steps towards meaningful open-source contributions.",
+    ],
   },
   {
     title: "Introduction to Git, GitHub and CLI",
-    date: "2026-08-15",
-    time: "5:00 pm",
-    venue: "A10, North Campus",
-    chapter: "ACM",
-    description: "A hands-on introduction to Git for version control, GitHub for collaborative development, and the command line for interacting with your system efficiently, covering commits, branching and collaboration workflows.",
+    subtitle: "Hands-on workshop",
+    tags: ["Workshop"],
+    body: [
+      "A hands-on introductory session aimed at equipping students with the essential tools and workflows used in modern software development. Participants are introduced to Git for version control, GitHub for collaborative development and code hosting, and the Command Line Interface (CLI) for interacting with their systems efficiently. Through practical demonstrations and exercises, students learn fundamental Git operations, repository management, branching, commits, and collaboration workflows, building a foundation for working on real-world software projects.",
+    ],
   },
   {
-    title: "Xploit at Xpecto 2026",
-    date: "2026-03-15",
-    time: "11:00 am",
-    venue: "Lecture Hall Complex",
-    chapter: "ACM",
-    description: "A reverse engineering competition at IIT Mandi's annual tech fest: analyse applications, programs and codebases, uncover hidden functionality and solve challenges by understanding how software works internally.",
+    title: "Githero",
+    subtitle: "Git & GitHub showdown",
+    tags: ["Competition", "First years"],
+    body: [
+      "Githero is a Git and GitHub-based competition organized primarily for first-year students, providing them with an opportunity to put their version control skills into practice. Participants are given a repository containing multiple issues and are challenged to investigate the codebase, identify and fix the problems, and submit their solutions through Pull Requests (PRs). The competition simulates a collaborative open-source development environment, encouraging participants to develop practical debugging skills, understand existing codebases, and become comfortable with industry-standard development workflows.",
+    ],
   },
   {
     title: "AlgoHack",
-    date: "2026-01-20",
-    time: "9:00 am",
-    venue: "Online",
-    chapter: "ACM",
-    description: "A reverse engineering competitive programming contest: given a problem statement and a flawed implementation, analyse its behaviour and construct test cases that expose incorrect outputs or cause it to fail.",
+    subtitle: "Reverse engineering competitive programming contest",
+    tags: ["Contest"],
+    body: [
+      "AlgoHack is a unique competitive programming challenge that approaches problem-solving from a reverse engineering perspective. Instead of writing a solution to a given problem, participants are provided with a problem statement along with an existing implementation that contains logical flaws or hidden edge cases. Their task is to analyze the implementation, understand its behavior, and construct test cases that expose incorrect outputs or cause the solution to fail. The competition tests participants' ability to think critically, identify corner cases, understand algorithmic limitations, and develop a deeper understanding of problem-solving beyond conventional coding contests.",
+    ],
   },
   {
     title: "Mock OA",
-    date: "2026-02-10",
-    time: "6:00 pm",
-    venue: "Online",
-    chapter: "ACM",
-    description: "An online assessment and interview preparation initiative for second-year students: timed coding tests modelled on company hiring rounds, followed by mock interviews for top performers, conducted twice.",
-  },
-];
-
-export const eventFormats = [
-  {
-    title: "Talks",
-    body: "Speakers from academia and industry on research, careers and the ideas shaping computing.",
-  },
-  {
-    title: "Workshops",
-    body: "Hands-on sessions where you leave with something working: a tool learned, a project started.",
-  },
-  {
-    title: "Coding contests",
-    body: "Competitive programming rounds to practise for ICPC-style contests and technical interviews.",
-  },
-  {
-    title: "Hackathons",
-    body: "Team weekends that take an idea from sketch to working demo.",
+    subtitle: "Online assessment & interview preparation",
+    tags: ["Second years", "Held twice"],
+    body: [
+      "Mock OA is an initiative aimed at preparing second-year students for internship and placement recruitment processes. The event recreates the environment of an actual online assessment (OA), allowing participants to experience timed coding tests similar to those conducted by companies during their hiring processes. Students are evaluated on their problem-solving abilities, coding proficiency, and performance under time constraints.",
+      "Following the assessment, top-performing candidates are shortlisted for mock interviews, providing them with an opportunity to experience technical interview scenarios and receive valuable exposure to the recruitment process. The initiative is conducted twice to give students multiple opportunities to practice, evaluate their progress, and improve their preparation for upcoming internship and placement opportunities.",
+    ],
   },
 ];
