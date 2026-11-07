@@ -46,12 +46,6 @@ const programmes = [
     body: "A timed competitive programming challenge, ranked on correctness and efficiency, with awards for top performers.",
   },
   {
-    title: "Algo Hack",
-    kind: "Challenge",
-    audience: "Open to all",
-    body: "Analyse a given algorithm and write test cases that make it fail: a contest about spotting edge cases and logical flaws, not writing code.",
-  },
-  {
     title: "Internship Guidance",
     kind: "Session",
     audience: "Open to all",
