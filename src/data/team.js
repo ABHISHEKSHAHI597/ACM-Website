@@ -38,7 +38,6 @@ export const teamGroups = [
       { name: "Vedansh Tyagi", role: "Core Member", github: null, image: "/images/team/vedansh-tyagi.jpg" },
       { name: "Vansh Pandey", role: "Web Dev Lead", github: null, image: "/images/team/vansh-pandey.jpg" },
       { name: "Aman Kumar", role: "Design Team", github: null, image: "/images/team/aman-kumar.jpg" },
-      { name: "Sumit Kumar", role: "Design Team", github: null, image: "/images/team/sumit-kumar.jpg" },
       { name: "Sumit Kumar Baitha", role: "Design Team", github: null, image: "/images/team/sumit-kumar-baitha.jpg" },
     ],
   },
