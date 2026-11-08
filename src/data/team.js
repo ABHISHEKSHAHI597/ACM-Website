@@ -12,6 +12,14 @@ export const teamGroups = [
     ],
   },
   {
+    title: "Mentors",
+    members: [
+      { name: "Sharath Subramanya", role: "Mentor", github: null, image: "/images/team/sharath-subramanya.jpg" },
+      { name: "Kartik Verma", role: "Mentor", github: null, image: "/images/team/kartik-verma.jpg" },
+      { name: "Rajsi Sangra", role: "Mentor", github: null, image: "/images/team/rajsi-sangra.jpg" },
+    ],
+  },
+  {
     title: "Core team",
     members: [
       { name: "Krishna Chandra Subramani", role: "Core Member", github: null, image: "/images/team/krishna-chandra-subramani.jpg" },
@@ -30,33 +38,30 @@ export const teamGroups = [
       { name: "Pranit Azad", role: "Core Member", github: null, image: "/images/team/pranit-azad.jpg" },
       { name: "Aarushi", role: "Core Member", github: null, image: "/images/team/aarushi.jpg" },
       { name: "Vedansh Tyagi", role: "Core Member", github: null, image: "/images/team/vedansh-tyagi.jpg" },
+      { name: "Vansh Pandey", role: "Web Dev Lead", github: null, image: "/images/team/vansh-pandey.jpg" },
       { name: "Aman Kumar", role: "Design Team", github: null, image: "/images/team/aman-kumar.jpg" },
       { name: "Sumit Kumar", role: "Design Team", github: null, image: "/images/team/sumit-kumar.jpg" },
       { name: "Sumit Kumar Baitha", role: "Design Team", github: null, image: "/images/team/sumit-kumar-baitha.jpg" },
-      { name: "Vansh Pandey", role: "Web Dev Lead", github: null, image: "/images/team/vansh-pandey.jpg" },
-      { name: "Sharath Subramanya", role: "Mentor", github: null, image: "/images/team/sharath-subramanya.jpg" },
-      { name: "Kartik Verma", role: "Mentor", github: null, image: "/images/team/kartik-verma.jpg" },
-      { name: "Rajsi Sangra", role: "Mentor", github: null, image: "/images/team/rajsi-sangra.jpg" },
     ],
   },
   {
     title: "ACM-W committee",
     members: [
+      { name: "Ramneet Kour", role: "ACM-W Coordinator", github: null, image: "/images/team/ramneet-kour.jpg" },
+      { name: "Paridhi Mittal", role: "ACM-W Co-Coordinator", github: null, image: "/images/team/paridhi-mittal.jpg" },
+      { name: "Mahak Agarwal", role: "ACM-W Co-Coordinator", github: null, image: "/images/team/mahak-agarwal.jpg" },
       { name: "Shreya Raj", role: "ACM-W Core Member", github: null, image: "/images/team/shreya-raj.jpg" },
       { name: "Ritika Sewaramani", role: "ACM-W Core Member", github: null, image: "/images/team/ritika-sewaramani.jpg" },
       { name: "Sampada Singh", role: "ACM-W Core Member", github: null, image: "/images/team/sampada-singh.png" },
-      { name: "Ramneet Kour", role: "ACM-W Coordinator", github: null, image: "/images/team/ramneet-kour.jpg" },
       { name: "Grishma Gupta", role: "ACM-W Core Member", github: null, image: "/images/team/grishma-gupta.jpg" },
       { name: "Kanika Gupta", role: "ACM-W Core Member", github: null, image: "/images/team/kanika-gupta.png" },
       { name: "Deepanshi", role: "ACM-W Core Member", github: null, image: "/images/team/deepanshi.jpg" },
       { name: "Neha", role: "ACM-W Core Member", github: null, image: "/images/team/neha.jpg" },
-      { name: "Paridhi Mittal", role: "ACM-W Co-Coordinator", github: null, image: "/images/team/paridhi-mittal.jpg" },
-      { name: "Mahak Agarwal", role: "ACM-W Co-Coordinator", github: null, image: "/images/team/mahak-agarwal.jpg" },
       { name: "Palak Mittal", role: "ACM-W Core Member", github: null, image: "/images/team/palak-mittal.jpg" },
     ],
   },
   {
-    title: "Faculty advisor",
+    title: "Faculty advisors",
     members: [
       { name: "Dr. Prateek Vishnoi", role: "ACM Chapter Advisor", github: null, image: "/images/team/dr-prateek-vishnoi.jpg", email: "prateekvishnoi@iitmandi.ac.in" },
       { name: "Dr. Sneha Singh", role: "ACM-W Chapter Advisor", github: null, image: "/images/team/dr-sneha-singh.jpg", email: "sneha@iitmandi.ac.in" },
